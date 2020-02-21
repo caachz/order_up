@@ -23,7 +23,9 @@ RSpec.describe Chef, type: :model do
     dish.ingredients << ingredient2
     dish.ingredients << ingredient3
 
-    # expect(chef.all_ingredients).to eq(["(303,Chili,4)", "(304,noodles,12)", "(305,sauce,2)"])
+    expect(chef.all_ingredients[0].split(',')[1]).to eq('Chili')
+    expect(chef.all_ingredients[1].split(',')[1]).to eq('noodles')
+    expect(chef.all_ingredients[2].split(',')[1]).to eq('sauce')
   end
   end
 end
