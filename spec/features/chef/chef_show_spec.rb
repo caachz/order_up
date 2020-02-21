@@ -18,7 +18,7 @@ RSpec.describe "When a visitor goes to the chef show page" do
     visit "/chefs/#{chef.id}"
 
     expect(page).to have_content("Ben Little")
-    expect(page)to have_link("All Ingredients")
+    expect(page).to have_link("All Ingredients")
 
     click_link("All Ingredients")
 
