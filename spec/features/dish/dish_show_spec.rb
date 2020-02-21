@@ -37,6 +37,6 @@ RSpec.describe "When a visitor goes to the dish show page" do
 
     visit "/dishes/#{dish.id}"
 
-    expect(page).to have_content("Total Calolires: 18")
+    expect(page).to have_content("Total Calories: 18")
   end
 end
