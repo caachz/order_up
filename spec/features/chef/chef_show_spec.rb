@@ -30,6 +30,3 @@ RSpec.describe "When a visitor goes to the chef show page" do
     expect(page).to_not have_content("chicken")
   end
 end
-
-
-# and I can see a unique list of names of all the ingredients that this chef uses
